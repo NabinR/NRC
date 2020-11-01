@@ -139,28 +139,394 @@
         <h2>Contact Us</h2>
         <h3>Get In Touch</h3>
 
-        <b>Inquiries: </b><a href="mailto:info@nrc.org.au">info@nrc.org.au</a>
-        <br />
-
         <div class="row">
             <div class="col-md-7">
-                <script type="text/javascript" src="https://form.jotform.com/jsform/203050413134841"></script>
+                <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/203050413134841"></script> -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+                <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+                <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21378" type="text/javascript"></script>
+                <script type="text/javascript">
+                    JotForm.init(function () {
+                        if (window.JotForm && JotForm.accessible) $('input_94').setAttribute('tabindex', 0);
+                        JotForm.newDefaultTheme = false;
+                        JotForm.extendsNewTheme = false;
+                        JotForm.newPaymentUIForNewCreatedForms = true;
+                        JotForm.newPaymentUI = true;
+                        JotForm.alterTexts(undefined);
+                        JotForm.alterTexts({ "couponApply": "Apply", "couponBlank": "Please enter a coupon.", "couponChange": "", "couponEnter": "Enter coupon", "couponExpired": "Coupon is expired. Please try another one.", "couponInvalid": "Coupon is invalid.", "couponValid": "Coupon is valid.", "shippingShipping": "Shipping", "taxTax": "Tax", "totalSubtotal": "Subtotal", "totalTotal": "Total" }, true);
+                        JotForm.clearFieldOnHide = "disable";
+                        FormTranslation.init({ "detectUserLanguage": "1", "firstPageOnly": "0", "options": "English (UK)", "originalLanguage": "en-UK", "primaryLanguage": "en-UK", "saveUserLanguage": "1", "showStatus": "flag-with-nation", "theme": "light-theme", "version": "2" });
+                        JotForm.submitError = "jumpToFirstError";
+                        /*INIT-END*/
+                    });
+
+                    JotForm.prepareCalculationsOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, null, null, null, null, null, { "description": "", "name": "fullName", "qid": "8", "text": "Full Name", "type": "control_fullname" }, null, { "description": "", "name": "email", "qid": "10", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber", "qid": "11", "text": "Phone Number", "type": "control_phone" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "description": "", "name": "message", "qid": "94", "subLabel": "", "text": "Message", "type": "control_textarea" }]);
+                    setTimeout(function () {
+                        JotForm.paymentExtrasOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, null, null, null, null, null, { "description": "", "name": "fullName", "qid": "8", "text": "Full Name", "type": "control_fullname" }, null, { "description": "", "name": "email", "qid": "10", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber", "qid": "11", "text": "Phone Number", "type": "control_phone" }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "description": "", "name": "message", "qid": "94", "subLabel": "", "text": "Message", "type": "control_textarea" }]);
+                    }, 20); 
+                </script>
+                <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.21378" rel="stylesheet" type="text/css" />
+                <link type="text/css" media="print" rel="stylesheet"
+                    href="https://cdn.jotfor.ms/css/printForm.css?3.3.21378" />
+                <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.21378" />
+                <link type="text/css" rel="stylesheet"
+                    href="https://cdn.jotfor.ms/themes/CSS/548b1325700cc48d318b4567.css?themeRevisionID=5d9dde6d01344c57607dbf31" />
+                <link type="text/css" rel="stylesheet"
+                    href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.21378" />
+                <link type="text/css" rel="stylesheet"
+                    href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.21378" />
+                <style type="text/css">
+                    .form-label-left {
+                        width: 150px;
+                    }
+
+                    .form-line {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                    }
+
+                    .form-label-right {
+                        width: 150px;
+                    }
+
+                    .form-all {
+                        width: 690px;
+                        color: #555 !important;
+                        font-family: 'Muli';
+                        font-size: 16px;
+                    }
+                </style>
+
+                <style type="text/css" id="form-designer-style">
+                    /* Injected CSS Code */
+                    /*PREFERENCES STYLE*/
+                    .form-all {
+                        font-family: Muli, sans-serif;
+                    }
+
+                    .form-all .qq-upload-button,
+                    .form-all .form-submit-button,
+                    .form-all .form-submit-reset,
+                    .form-all .form-submit-print {
+                        font-family: Muli, sans-serif;
+                    }
+
+                    .form-all .form-pagebreak-back-container,
+                    .form-all .form-pagebreak-next-container {
+                        font-family: Muli, sans-serif;
+                    }
+
+                    .form-header-group {
+                        font-family: Muli, sans-serif;
+                    }
+
+                    .form-label {
+                        font-family: Muli, sans-serif;
+                    }
+
+                    .form-label.form-label-auto {
+
+                        display: inline-block;
+                        float: left;
+                        text-align: left;
+
+                    }
+
+                    .form-line {
+                        margin-top: 12px;
+                        margin-bottom: 12px;
+                    }
+
+                    .form-all {
+                        max-width: 690px;
+                        width: 100%;
+                    }
+
+                    .form-label.form-label-left,
+                    .form-label.form-label-right,
+                    .form-label.form-label-left.form-label-auto,
+                    .form-label.form-label-right.form-label-auto {
+                        width: 150px;
+                    }
+
+                    .form-all {
+                        font-size: 16px
+                    }
+
+                    .form-all .qq-upload-button,
+                    .form-all .qq-upload-button,
+                    .form-all .form-submit-button,
+                    .form-all .form-submit-reset,
+                    .form-all .form-submit-print {
+                        font-size: 16px
+                    }
+
+                    .form-all .form-pagebreak-back-container,
+                    .form-all .form-pagebreak-next-container {
+                        font-size: 16px
+                    }
+
+                    .supernova .form-all,
+                    .form-all {
+                        background-color: #fff;
+                    }
+
+                    .form-all {
+                        color: #555;
+                    }
+
+                    .form-header-group .form-header {
+                        color: rgb(46, 109, 164);
+                    }
+
+                    .form-header-group .form-subHeader {
+                        color: #555;
+                    }
+
+                    .form-label-top,
+                    .form-label-left,
+                    .form-label-right,
+                    .form-html,
+                    .form-checkbox-item label,
+                    .form-radio-item label {
+                        color: #555;
+                    }
+
+                    .form-sub-label {
+                        color: #6f6f6f;
+                    }
+
+                    .supernova {
+                        background-color: #fafafa;
+                    }
+
+                    .supernova body {
+                        background: transparent;
+                    }
+
+                    .form-textbox,
+                    .form-textarea,
+                    .form-dropdown,
+                    .form-radio-other-input,
+                    .form-checkbox-other-input,
+                    .form-captcha input,
+                    .form-spinner input {
+                        background-color: rgb(255, 255, 255);
+                    }
+
+                    .supernova {
+                        background-image: none;
+                    }
+
+                    #stage {
+                        background-image: none;
+                    }
+
+                    .form-all {
+                        background-image: none;
+                    }
+
+                    .ie-8 .form-all:before {
+                        display: none;
+                    }
+
+                    .ie-8 {
+                        margin-top: auto;
+                        margin-top: initial;
+                    }
+
+                    /*PREFERENCES STYLE*/
+                    /*__INSPECT_SEPERATOR__*/
+                    .form-label.form-label-auto {
+
+                        display: inline-block;
+                        float: left;
+                        text-align: left;
+
+                    }
+
+                    /* Injected CSS Code */
+                </style>
+
+                <link type="text/css" rel="stylesheet"
+                    href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-blue.css?3.3.21378" />
+                <form class="jotform-form" action="https://submit.jotform.com/submit/203050413134841/" method="post"
+                    name="form_203050413134841" id="203050413134841" accept-charset="utf-8" autocomplete="on">
+                    <input type="hidden" name="formID" value="203050413134841" />
+                    <input type="hidden" id="JWTContainer" value="" />
+                    <input type="hidden" id="cardinalOrderNumber" value="" />
+                    <div role="main" class="form-all">
+                        <link type="text/css" rel="stylesheet" media="all"
+                            href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.21378" />
+                        <div class="cont">
+                            <input type="text" id="input_language" name="input_language" style="display:none" />
+                            <div class="language-dd" id="langDd" style="display:none">
+                                <div class="dd-placeholder lang-emp">
+                                    Language
+                                </div>
+                                <ul class="lang-list dn" id="langList">
+                                    <li data-lang="en-UK" class="en-UK">
+                                        English (UK)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript"
+                            src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.21378"></script>
+                        <ul class="form-section page-section">
+                            <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+                                <label class="form-label form-label-left form-label-auto" id="label_8" for="first_8">
+                                    Full Name
+                                    <span class="form-required">
+                                        *
+                                    </span>
+                                </label>
+                                <div id="cid_8" class="form-input jf-required">
+                                    <div data-wrapper-react="true">
+                                        <span class="form-sub-label-container" style="vertical-align:top"
+                                            data-input-type="first">
+                                            <input type="text" id="first_8" name="q8_fullName[first]"
+                                                class="form-textbox validate[required]" size="10" value=""
+                                                data-component="first" aria-labelledby="label_8 sublabel_8_first"
+                                                required="" />
+                                            <label class="form-sub-label" for="first_8" id="sublabel_8_first"
+                                                style="min-height:13px" aria-hidden="false"> First Name </label>
+                                        </span>
+                                        <span class="form-sub-label-container" style="vertical-align:top"
+                                            data-input-type="last">
+                                            <input type="text" id="last_8" name="q8_fullName[last]"
+                                                class="form-textbox validate[required]" size="15" value=""
+                                                data-component="last" aria-labelledby="label_8 sublabel_8_last"
+                                                required="" />
+                                            <label class="form-sub-label" for="last_8" id="sublabel_8_last"
+                                                style="min-height:13px" aria-hidden="false"> Last Name </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-line jf-required" data-type="control_email" id="id_10">
+                                <label class="form-label form-label-left form-label-auto" id="label_10" for="input_10">
+                                    Email
+                                    <span class="form-required">
+                                        *
+                                    </span>
+                                </label>
+                                <div id="cid_10" class="form-input jf-required">
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="email" id="input_10" name="q10_email"
+                                            class="form-textbox validate[required, Email]" size="30" value=""
+                                            data-component="email" aria-labelledby="label_10 sublabel_input_10"
+                                            required="" />
+                                        <label class="form-sub-label" for="input_10" id="sublabel_input_10"
+                                            style="min-height:13px" aria-hidden="false"> example@example.com </label>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="form-line jf-required" data-type="control_phone" id="id_11">
+                                <label class="form-label form-label-left form-label-auto" id="label_11"
+                                    for="input_11_area">
+                                    Phone Number
+                                    <span class="form-required">
+                                        *
+                                    </span>
+                                </label>
+                                <div id="cid_11" class="form-input jf-required">
+                                    <div data-wrapper-react="true">
+                                        <span class="form-sub-label-container" style="vertical-align:top"
+                                            data-input-type="areaCode">
+                                            <input type="tel" id="input_11_area" name="q11_phoneNumber[area]"
+                                                class="form-textbox validate[required]" value=""
+                                                data-component="areaCode" aria-labelledby="label_11 sublabel_11_area"
+                                                required="" />
+                                            <span class="phone-separate" aria-hidden="true">
+                                                -
+                                            </span>
+                                            <label class="form-sub-label" for="input_11_area" id="sublabel_11_area"
+                                                style="min-height:13px" aria-hidden="false"> Area Code </label>
+                                        </span>
+                                        <span class="form-sub-label-container" style="vertical-align:top"
+                                            data-input-type="phone">
+                                            <input type="tel" id="input_11_phone" name="q11_phoneNumber[phone]"
+                                                class="form-textbox validate[required]" value="" data-component="phone"
+                                                aria-labelledby="label_11 sublabel_11_phone" required="" />
+                                            <label class="form-sub-label" for="input_11_phone" id="sublabel_11_phone"
+                                                style="min-height:13px" aria-hidden="false"> Phone Number </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-line jf-required" data-type="control_textarea" id="id_94">
+                                <label class="form-label form-label-left form-label-auto" id="label_94" for="input_94">
+                                    Message
+                                    <span class="form-required">
+                                        *
+                                    </span>
+                                </label>
+                                <div id="cid_94" class="form-input jf-required">
+                                    <textarea id="input_94" class="form-textarea validate[required]" name="q94_message"
+                                        cols="40" rows="6" data-component="textarea" required=""
+                                        aria-labelledby="label_94"></textarea>
+                                </div>
+                            </li>
+                            <li class="form-line" data-type="control_button" id="id_2">
+                                <div id="cid_2" class="form-input-wide">
+                                    <div style="margin-left:156px" data-align="auto"
+                                        class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                                        <button id="input_2" type="submit"
+                                            class="form-submit-button form-submit-button-blue submit-button jf-form-buttons jsTest-submitField"
+                                            data-component="button" data-content="">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="display:none">
+                                Should be Empty:
+                                <input type="text" name="website" value="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <script>
+                        JotForm.showJotFormPowered = "new_footer";
+                    </script>
+                    <script>
+                        JotForm.poweredByText = "Powered by JotForm";
+                    </script> -->
+                    <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="203050413134841" />
+                    <script type="text/javascript">
+                        var all_spc = document.querySelectorAll("form[id='203050413134841'] .si" + "mple" + "_spc");
+                        for (var i = 0; i < all_spc.length; i++) {
+                            all_spc[i].value = "203050413134841-203050413134841";
+                        }
+                    </script>
+                    <!-- <div class="formFooter-heightMask">
+                    </div>
+                    <div class="formFooter f6">
+                        <div class="formFooter-wrapper formFooter-leftSide">
+                            <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=203050413134841&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le"
+                                target="_blank" class="formFooter-logoLink"><img class="formFooter-logo"
+                                    src="https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png" alt="Jotform Logo"></a>
+                        </div>
+                        <div class="formFooter-wrapper formFooter-rightSide">
+                            <span class="formFooter-text">
+                                Now create your own JotForm - It's free!
+                            </span>
+                            <a class="formFooter-button"
+                                href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=203050413134841&utm_content=jotform_button&utm_campaign=powered_by_jotform_le"
+                                target="_blank">Create your own JotForm</a>
+                        </div>
+                    </div> -->
+                </form>
             </div>
             <div class="col-md-5">
+                <b>Inquiries: </b><a href="mailto:info@nrc.org.au">info@nrc.org.au</a>
+                <br /><br />
                 <img src="../images/contact.jpg" alt="Contact Us"
                     style="margin-left: 5px; border-color: rgb(255, 255, 255); float: right;"
                     class="img-responsive center-block" />
             </div>
         </div>
 
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-        <script>
-            function onSubmit(token) {
-                if (token) {
-                    document.getElementById("contact-form").submit();
-                }
-            }
-        </script>
     </div>
     <br />
     <div class="container-fluid" style="background-color:#CCEEFF">
@@ -208,8 +574,6 @@
         <p></p>
     </div>
 
-
-
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" crossorigin="anonymous"
         integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
@@ -219,7 +583,6 @@
         </script>
     <script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal || document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\u0022\u003E\u003C\/script\u003E"));</script>
     <script src="../js/site.min.js"></script>
-
 
     <!-- SmartMenus jQuery plugin -->
     <script src="../lib/smartmenus/dist/jquery.smartmenus.js" type="text/javascript"></script>
@@ -239,10 +602,6 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-
-
-
-
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js" crossorigin="anonymous"
         integrity="sha384-Fnqn3nxp3506LP/7Y3j/25BlWeA3PXTyT1l78LjECcPaKCV12TsZP7yyMxOe/G/k">
         </script>
@@ -251,7 +610,6 @@
         crossorigin="anonymous" integrity="sha384-JrXK+k53HACyavUKOsL+NkmSesD2P+73eDMrbTtTk0h4RmOF8hF8apPlkp26JlyH">
         </script>
     <script>(window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive || document.write("\u003Cscript src=\u0022\/lib\/jquery-validation-unobtrusive\/jquery.validate.unobtrusive.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-JrXK\u002Bk53HACyavUKOsL\u002BNkmSesD2P\u002B73eDMrbTtTk0h4RmOF8hF8apPlkp26JlyH\u0022\u003E\u003C\/script\u003E"));</script>
-
 
 </body>
 
