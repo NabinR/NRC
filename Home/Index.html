@@ -266,81 +266,49 @@
         </div> -->
 
         <div id="" class="row">
-            <div id="charity-golf" class="col-md-8 text-justify">
-                <h3><a href="Home/News.html">Charity Golf Tournament</a></h3>
+            <div id="charity-golf" class="col-md-12 text-justify">
+                <h3><a href="Home/News.html">R2M - Charity Golf Tournament</a></h3>
+            </div>
+            <div class="col-md-2 text-justify">
+                <a href="https://www.r2mbusinessgroup.com.au/" target="_blank"><img src="images/logos/r2m.gif"
+                        class="img-thumbnail" width="200" style="margin-bottom:5px" /></a>
+            </div>
+            <div class="col-md-6 text-justify">
                 <p>
-                    NRC is organnising the Annual Charity Golf Tournament. Please complete the form below to register.
+                    NRC is organnising the Annual Charity Golf Tournament. Many thanks to the Title Sponsor - 
+                    <a href="https://www.r2mbusinessgroup.com.au/" target="_blank"><b>R2M Business Group</b></a> for making this event possible.
                 </p>
-                                <iframe id="JotFormIFrame-210569448485871" title="Charity Golf Tournament"
-                    onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true"
-                    allow="geolocation; microphone; camera" src="https://form.jotform.com/210569448485871"
-                    frameborder="0" style="min-width: 100%; height: 100%; border:none;" scrolling="no">
-                </iframe>
-                <script type="text/javascript">
-                    var ifr = document.getElementById("JotFormIFrame-210569448485871");
-                    if (ifr) {
-                        var src = ifr.src;
-                        var iframeParams = [];
-                        if (window.location.href && window.location.href.indexOf("?") > -1) {
-                            iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-                        }
-                        if (src && src.indexOf("?") > -1) {
-                            iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-                            src = src.substr(0, src.indexOf("?"))
-                        }
-                        iframeParams.push("isIframeEmbed=1");
-                        ifr.src = src + "?" + iframeParams.join('&');
-                    }
-                    window.handleIFrameMessage = function (e) {
-                        if (typeof e.data === 'object') { return; }
-                        var args = e.data.split(":");
-                        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-                        if (!iframe) { return; }
-                        switch (args[0]) {
-                            case "scrollIntoView":
-                                iframe.scrollIntoView();
-                                break;
-                            case "setHeight":
-                                iframe.style.height = args[1] + "px";
-                                break;
-                            case "collapseErrorPage":
-                                if (iframe.clientHeight > window.innerHeight) {
-                                    iframe.style.height = window.innerHeight + "px";
-                                }
-                                break;
-                            case "reloadPage":
-                                window.location.reload();
-                                break;
-                            case "loadScript":
-                                var src = args[1];
-                                if (args.length > 3) {
-                                    src = args[1] + ':' + args[2];
-                                }
-                                var script = document.createElement('script');
-                                script.src = src;
-                                script.type = 'text/javascript';
-                                document.body.appendChild(script);
-                                break;
-                            case "exitFullscreen":
-                                if (window.document.exitFullscreen) window.document.exitFullscreen();
-                                else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
-                                else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
-                                else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
-                                else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
-                                break;
-                        }
-                        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-                        if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                            var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
-                            iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
-                        }
-                    };
-                    if (window.addEventListener) {
-                        window.addEventListener("message", handleIFrameMessage, false);
-                    } else if (window.attachEvent) {
-                        window.attachEvent("onmessage", handleIFrameMessage);
-                    }
-                </script>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Date Time / Venue</th>
+                            <th>Coordinator(s)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                20/03/2021 11:00AM<br />
+                                <a href="https://goo.gl/maps/wT5oL25vzFeTvTyb7" target="_blank">
+                                    Fox Hills Golf Club<br />
+                                    55 Fox Hills Cres<br />
+                                    Prospect, NSW 2148
+                                </a>
+                            </td>
+                            <td>
+                                Sudeep Bastola<br />
+                                <a href="tel:+61430110309">0430 110 309</a><br />
+                                <a href="mailto:golf@nrc.org.au">golf@nrc.org.au</a><br />
+                                Pranab Mainali<br />
+                                <a href="tel:+61420510148">0420 510 148</a>
+                            </td>
+                            <td>
+                                <b><a href="News.html">Register Now...</a></b>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
